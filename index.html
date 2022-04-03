@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Курс валют </title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤑</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/main.min.css">
+    <script defer src="src/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Курс валют</h1>
+    </header>
+    <input type="date" id="exchange-date">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 offset-1">
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th> Назва </th>
+                            <th> Код валюти </th>
+                            <th> Курс </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="calculator">
+            <input type="number" id="UAH-input" min="0.0001" step="0.0001" placeholder="Введіть UAH">
+            <select id="currency">
+            </select>
+            <div class="result">
+                <p>Результат</p>
+            </div>
+            <button>Конвертувати</button>
+        </div>
+    </footer>
+</body>
+
+</html>
